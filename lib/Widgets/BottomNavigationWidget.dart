@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shop_click/pages/Cart.dart';
 import 'package:shop_click/pages/Orders.dart';
 import 'package:shop_click/pages/Products.dart';
 
@@ -43,7 +44,7 @@ class BottomNavigation extends StatelessWidget {
             Get.to(Products());
             break;
           case 2:
-            Get.to(Orders());
+            Get.to(Cart());
             break;
           case 3:
             Get.to(Orders());

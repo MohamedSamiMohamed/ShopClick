@@ -5,6 +5,7 @@ import 'package:shop_click/Controllers/NewsController.dart';
 import 'package:shop_click/Widgets/BottomNavigationWidget.dart';
 import 'package:shop_click/Widgets/NewsItemWidget.dart';
 import 'package:get/get.dart';
+import 'package:shop_click/pages/Cart.dart';
 
 class Home extends StatelessWidget {
   final NewsController newsController = Get.put(NewsController());
@@ -59,7 +60,7 @@ class Home extends StatelessWidget {
                   IconButton(
                       icon: Icon(Icons.shopping_bag_outlined,
                           color: Colors.black),
-                      onPressed: () => {}),
+                      onPressed: () => {Get.to(Cart())}),
                   Positioned(
                     bottom: 0,
                     child: Text(
